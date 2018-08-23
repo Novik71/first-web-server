@@ -28,6 +28,7 @@ const req = https.request(options, (res) => {
             // trimSection.apiUrl = result.apiUrl;
             return trimSection;
         });
+        console.log(trimmedSections);
         selectedSections = trimmedSections.filter(section => {
             return ['Art and design',
             'Culture',
